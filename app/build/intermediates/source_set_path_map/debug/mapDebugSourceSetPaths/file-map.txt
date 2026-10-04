@@ -1,0 +1,7 @@
+com.example.brightsaver.app-pngs-0 D:\BrightSaver_Android_Studio\app\build\generated\res\pngs\debug
+com.example.brightsaver.app-resValues-1 D:\BrightSaver_Android_Studio\app\build\generated\res\resValues\debug
+com.example.brightsaver.app-packageDebugResources-2 D:\BrightSaver_Android_Studio\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.brightsaver.app-packageDebugResources-3 D:\BrightSaver_Android_Studio\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.brightsaver.app-debug-4 D:\BrightSaver_Android_Studio\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.example.brightsaver.app-debug-5 D:\BrightSaver_Android_Studio\app\src\debug\res
+com.example.brightsaver.app-main-6 D:\BrightSaver_Android_Studio\app\src\main\res

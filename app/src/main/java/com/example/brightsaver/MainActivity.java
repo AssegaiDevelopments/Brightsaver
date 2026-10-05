@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.provider.Settings;
 import android.content.Intent;
 import android.net.Uri;
-import android.view.WindowManager;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.view.Gravity;
@@ -15,7 +14,6 @@ import android.widget.LinearLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
-
 
 public class MainActivity extends Activity {
     private BrightnessManager brightnessManager;
@@ -31,14 +29,16 @@ public class MainActivity extends Activity {
     }
 
     private void buildInterface() {
+        String appName = getString(R.string.app_name);
+
         LinearLayout root = new LinearLayout(this);
         root.setOrientation(LinearLayout.VERTICAL);
         root.setPadding(dp(24), dp(28), dp(24), dp(24));
-        root.setGravity(Gravity.CENTER_HORIZONTAL);
+        root.setGravity(Gravity.CENTER_VERTICAL);
         root.setBackgroundColor(Color.rgb(12, 20, 32));
 
         TextView title = new TextView(this);
-        title.setText("BrightSaver");
+        title.setText(appName);
         title.setTextColor(Color.WHITE);
         title.setTextSize(30);
         title.setTypeface(Typeface.DEFAULT, Typeface.BOLD);
@@ -46,7 +46,7 @@ public class MainActivity extends Activity {
         root.addView(title, matchWrap());
 
         TextView subtitle = new TextView(this);
-        subtitle.setText("Smart Screen Dimmer Utility");
+        subtitle.setText(getString(R.string.subtitle));
         subtitle.setTextColor(Color.rgb(165, 190, 220));
         subtitle.setTextSize(15);
         subtitle.setGravity(Gravity.CENTER);
@@ -55,7 +55,7 @@ public class MainActivity extends Activity {
         root.addView(subtitle, subParams);
 
         TextView info = new TextView(this);
-        info.setText("Choose a power-saving preset or adjust brightness manually. Lower brightness may help reduce screen power use.");
+        info.setText(R.string.info);
         info.setTextColor(Color.rgb(225, 232, 242));
         info.setTextSize(14);
         info.setGravity(Gravity.CENTER);
@@ -66,7 +66,7 @@ public class MainActivity extends Activity {
         root.addView(info, infoParams);
 
         TextView presetTitle = new TextView(this);
-        presetTitle.setText("QUICK PRESETS");
+        presetTitle.setText(R.string.preset_title);
         presetTitle.setTextColor(Color.rgb(120, 190, 255));
         presetTitle.setTextSize(13);
         presetTitle.setTypeface(Typeface.DEFAULT, Typeface.BOLD);
@@ -99,7 +99,7 @@ public class MainActivity extends Activity {
         brightnessSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 updateBrightnessLabel(progress);
-                if (fromUser) brightnessManager.setWindowBrightness(progress);
+                if (fromUser) brightnessManager.setWindowBrightnessGlobal(progress);
             }
             @Override public void onStartTrackingTouch(SeekBar seekBar) { }
             @Override public void onStopTrackingTouch(SeekBar seekBar) { }
@@ -109,20 +109,43 @@ public class MainActivity extends Activity {
         statusLabel.setTextColor(Color.rgb(165, 190, 220));
         statusLabel.setTextSize(12);
         statusLabel.setGravity(Gravity.CENTER);
-        statusLabel.setText("Changes apply to this app window. System-wide control may require permission.");
+        statusLabel.setText(R.string.status_label);
         LinearLayout.LayoutParams statusParams = matchWrap();
         statusParams.topMargin = dp(14);
         root.addView(statusLabel, statusParams);
 
         Button systemButton = new Button(this);
-        systemButton.setText("Allow system brightness control");
+        systemButton.setText(R.string.system_button);
         LinearLayout.LayoutParams buttonParams = matchWrap();
         buttonParams.topMargin = dp(16);
         root.addView(systemButton, buttonParams);
-        systemButton.setOnClickListener(v -> requestSystemBrightnessPermission());
+
+        //reworked global brightness
+        systemButton.setOnClickListener(v -> {
+            if (!Settings.System.canWrite(MainActivity.this)) {
+                requestSystemBrightnessPermission();
+            } else {
+                int percent = brightnessSeekBar.getProgress();
+
+                boolean success =
+                        brightnessManager.setWindowBrightnessGlobal(percent);
+
+                if (success) {
+                    statusLabel.setText(R.string.status_label_success_text);
+                    Toast.makeText(
+                            MainActivity.this,
+                            "System brightness updated",
+                            Toast.LENGTH_SHORT
+                    ).show();
+                } else {
+                    statusLabel.setText(R.string.status_label_fail_text);
+                }
+            }
+        });
+
 
         TextView footer = new TextView(this);
-        footer.setText("BrightSaver • GreenIT Project");
+        footer.setText(R.string.footer);
         footer.setTextColor(Color.rgb(120, 145, 170));
         footer.setTextSize(12);
         footer.setGravity(Gravity.CENTER);
@@ -135,13 +158,15 @@ public class MainActivity extends Activity {
 
     private void addPresetButton(LinearLayout root, BrightnessPreset preset) {
         Button button = new Button(this);
-        button.setText(preset.getName() + "  •  " + preset.getBrightnessPercent() + "%");
+        button.setText(getString(R.string.add_preset_button_text,preset.getName(),preset.getBrightnessPercent()));
+        //button.setText(preset.getName() + "  •  " + preset.getBrightnessPercent() + "%");
         button.setAllCaps(false);
         LinearLayout.LayoutParams params = matchWrap();
         params.topMargin = dp(8);
         root.addView(button, params);
         button.setOnClickListener(v -> {
-            brightnessManager.setWindowBrightness(preset.getBrightnessPercent());
+            if(Settings.System.canWrite(this))brightnessManager.setWindowBrightnessGlobal(preset.getBrightnessPercent());
+                    else brightnessManager.setWindowBrightness(preset.getBrightnessPercent());
             brightnessSeekBar.setProgress(preset.getBrightnessPercent());
             statusLabel.setText(preset.getDescription());
             Toast.makeText(this, preset.getName() + " applied", Toast.LENGTH_SHORT).show();
@@ -149,8 +174,7 @@ public class MainActivity extends Activity {
     }
 
     private void requestSystemBrightnessPermission() {
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M
-                && !Settings.System.canWrite(this)) {
+        if (!Settings.System.canWrite(this)) {
             try {
                 Intent intent = new Intent(Settings.ACTION_MANAGE_WRITE_SETTINGS,
                         Uri.parse("package:" + getPackageName()));
@@ -159,22 +183,27 @@ public class MainActivity extends Activity {
                 Toast.makeText(this, "Open Android Settings to grant modify system settings.", Toast.LENGTH_LONG).show();
             }
         } else {
-            statusLabel.setText("System brightness permission is already granted. Use Android's system brightness setting if needed.");
+            statusLabel.setText(R.string.request_system_brightness_permission_text);
             Toast.makeText(this, "Permission granted", Toast.LENGTH_SHORT).show();
         }
     }
 
     private void updateBrightnessLabel(int percent) {
-        if (brightnessLabel != null) brightnessLabel.setText("Screen brightness: " + percent + "%");
+        if (brightnessLabel != null) brightnessLabel.setText(getString(R.string.update_brightness_level_text, percent));
     }
 
     @Override
     protected void onResume() {
         super.onResume();
         if (brightnessManager != null && brightnessSeekBar != null) {
-            brightnessSeekBar.setProgress(brightnessManager.getWindowBrightnessPercent());
+            int percent =
+                    brightnessManager.getWindowBrightnessPercent();
+
+            brightnessSeekBar.setProgress(percent);
+            updateBrightnessLabel(percent);
         }
     }
+
 
     private LinearLayout.LayoutParams matchWrap() {
         return new LinearLayout.LayoutParams(

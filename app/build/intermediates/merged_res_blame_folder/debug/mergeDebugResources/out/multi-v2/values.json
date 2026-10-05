@@ -4,22 +4,77 @@
             "outputFile": "com.example.brightsaver.app-mergeDebugResources-2:/values/values.xml",
             "map": [
                 {
-                    "source": "D:\\BrightSaver_Android_Studio\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "C:\\Users\\P2\\StudioProjects\\Brightsaver\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
-                        "startLines": "1",
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,13,12,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,4,4,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,1038,957,-1,-1,-1",
+                        "endColumns": "-1,-1,-1,-1,-1,-1,-1,85,79,-1,-1,-1",
+                        "endOffsets": "-1,-1,-1,-1,-1,-1,-1,1119,1032,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,122,171,236,380,435,606,725,811,891,956,1030",
+                        "endColumns": "66,48,64,143,54,170,118,85,79,64,73,80",
+                        "endOffsets": "117,166,231,375,430,601,720,806,886,951,1025,1106"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\P2\\StudioProjects\\Brightsaver\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "-1",
+                        "startColumns": "-1",
+                        "startOffsets": "-1"
+                    },
+                    "to": {
+                        "startLines": "14",
                         "startColumns": "4",
-                        "startOffsets": "16",
-                        "endLines": "8",
+                        "startOffsets": "1111",
+                        "endLines": "21",
                         "endColumns": "12",
-                        "endOffsets": "469"
+                        "endOffsets": "1564"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\P2\\.gradle\\daemon\\9.3.0\\com.example.brightsaver.app-mergeDebugResources-2:\\values\\values.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\P2\\StudioProjects\\Brightsaver\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endColumns": "48",
+                        "endOffsets": "101"
                     },
                     "to": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "55",
-                        "endLines": "9",
+                        "endColumns": "48",
+                        "endOffsets": "99"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\P2\\StudioProjects\\Brightsaver\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "17",
+                        "endLines": "8",
                         "endColumns": "12",
-                        "endOffsets": "508"
+                        "endOffsets": "477"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "104",
+                        "endLines": "10",
+                        "endColumns": "12",
+                        "endOffsets": "557"
                     }
                 }
             ]

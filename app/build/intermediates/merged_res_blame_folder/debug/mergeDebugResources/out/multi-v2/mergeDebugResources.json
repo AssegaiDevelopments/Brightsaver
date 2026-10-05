@@ -1,25 +1,102 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.brightsaver.app-debug-4:/values_values.arsc.flat",
+            "outputFile": "C:\\Users\\P2\\.gradle\\daemon\\9.3.0\\com.example.brightsaver.app-debug-4:\\values-v27_values-v27.arsc.flat",
             "map": [
                 {
-                    "source": "D:\\BrightSaver_Android_Studio\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "C:\\Users\\P2\\StudioProjects\\Brightsaver\\app\\src\\main\\res\\values-v27\\styles.xml",
+                    "from": {
+                        "startLines": "-1,2",
+                        "startColumns": "-1,4",
+                        "startOffsets": "-1,57",
+                        "endLines": "-1,9",
+                        "endColumns": "-1,12",
+                        "endOffsets": "-1,517"
+                    },
+                    "to": {
+                        "startLines": "2,10",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,518",
+                        "endLines": "9,17",
+                        "endColumns": "12,12",
+                        "endOffsets": "513,971"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\P2\\.gradle\\daemon\\9.3.0\\com.example.brightsaver.app-debug-4:\\values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\P2\\StudioProjects\\Brightsaver\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,122,171,236,380,435,606,725,790,864",
+                        "endColumns": "66,48,64,143,54,170,118,64,73,80",
+                        "endOffsets": "117,166,231,375,430,601,720,785,859,940"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\P2\\StudioProjects\\Brightsaver\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",
-                        "startOffsets": "16",
+                        "startOffsets": "17",
                         "endLines": "8",
                         "endColumns": "12",
-                        "endOffsets": "469"
+                        "endOffsets": "477"
                     },
                     "to": {
-                        "startLines": "2",
+                        "startLines": "12",
                         "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "9",
+                        "startOffsets": "945",
+                        "endLines": "19",
                         "endColumns": "12",
-                        "endOffsets": "508"
+                        "endOffsets": "1398"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.example.brightsaver.app-debug-4:/values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\P2\\StudioProjects\\Brightsaver\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,13,12,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,4,4,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,1038,957,-1,-1,-1",
+                        "endColumns": "-1,-1,-1,-1,-1,-1,-1,85,79,-1,-1,-1",
+                        "endOffsets": "-1,-1,-1,-1,-1,-1,-1,1119,1032,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,122,171,236,380,435,606,725,811,891,956,1030",
+                        "endColumns": "66,48,64,143,54,170,118,85,79,64,73,80",
+                        "endOffsets": "117,166,231,375,430,601,720,806,886,951,1025,1106"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\P2\\StudioProjects\\Brightsaver\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "-1",
+                        "startColumns": "-1",
+                        "startOffsets": "-1"
+                    },
+                    "to": {
+                        "startLines": "14",
+                        "startColumns": "4",
+                        "startOffsets": "1111",
+                        "endLines": "21",
+                        "endColumns": "12",
+                        "endOffsets": "1564"
                     }
                 }
             ]

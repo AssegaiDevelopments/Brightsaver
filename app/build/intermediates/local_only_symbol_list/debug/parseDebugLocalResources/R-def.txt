@@ -1,3 +1,25 @@
 R_DEF: Internal format may change without notice
 local
+drawable ic_icon_background
+drawable ic_launcher_background
+drawable icon
+mipmap ic_icon
+mipmap ic_icon_foreground
+mipmap ic_icon_round
+mipmap ic_launcher
+mipmap ic_launcher_foreground
+mipmap ic_launcher_round
+string add_preset_button_text
+string app_name
+string footer
+string info
+string preset_title
+string request_system_brightness_permission_text
+string status_label
+string status_label_fail_text
+string status_label_success_text
+string subtitle
+string system_button
+string update_brightness_level_text
+style AppLightTheme
 style AppTheme

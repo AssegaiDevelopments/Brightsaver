@@ -1,55 +1,59 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\BrightSaver_Android_Studio\app\src\main\AndroidManifest.xml:1:1-15:12
-INJECTED from D:\BrightSaver_Android_Studio\app\src\main\AndroidManifest.xml:1:1-15:12
-INJECTED from D:\BrightSaver_Android_Studio\app\src\main\AndroidManifest.xml:1:1-15:12
-INJECTED from D:\BrightSaver_Android_Studio\app\src\main\AndroidManifest.xml:1:1-15:12
+ADDED from C:\Users\P2\StudioProjects\Brightsaver\app\src\main\AndroidManifest.xml:1:1-17:12
+INJECTED from C:\Users\P2\StudioProjects\Brightsaver\app\src\main\AndroidManifest.xml:1:1-17:12
+INJECTED from C:\Users\P2\StudioProjects\Brightsaver\app\src\main\AndroidManifest.xml:1:1-17:12
+INJECTED from C:\Users\P2\StudioProjects\Brightsaver\app\src\main\AndroidManifest.xml:1:1-17:12
 	package
-		INJECTED from D:\BrightSaver_Android_Studio\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\P2\StudioProjects\Brightsaver\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\BrightSaver_Android_Studio\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\P2\StudioProjects\Brightsaver\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\Users\P2\StudioProjects\Brightsaver\app\src\main\AndroidManifest.xml:2:5-51
 	android:versionCode
-		INJECTED from D:\BrightSaver_Android_Studio\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\P2\StudioProjects\Brightsaver\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\BrightSaver_Android_Studio\app\src\main\AndroidManifest.xml:1:11-69
+		ADDED from C:\Users\P2\StudioProjects\Brightsaver\app\src\main\AndroidManifest.xml:1:11-69
 uses-permission#android.permission.WRITE_SETTINGS
-ADDED from D:\BrightSaver_Android_Studio\app\src\main\AndroidManifest.xml:2:5-73
+ADDED from C:\Users\P2\StudioProjects\Brightsaver\app\src\main\AndroidManifest.xml:3:5-4:47
+	tools:ignore
+		ADDED from C:\Users\P2\StudioProjects\Brightsaver\app\src\main\AndroidManifest.xml:4:9-44
 	android:name
-		ADDED from D:\BrightSaver_Android_Studio\app\src\main\AndroidManifest.xml:2:22-70
+		ADDED from C:\Users\P2\StudioProjects\Brightsaver\app\src\main\AndroidManifest.xml:3:22-70
 application
-ADDED from D:\BrightSaver_Android_Studio\app\src\main\AndroidManifest.xml:3:5-14:19
-INJECTED from D:\BrightSaver_Android_Studio\app\src\main\AndroidManifest.xml:3:5-14:19
+ADDED from C:\Users\P2\StudioProjects\Brightsaver\app\src\main\AndroidManifest.xml:5:5-16:19
+INJECTED from C:\Users\P2\StudioProjects\Brightsaver\app\src\main\AndroidManifest.xml:5:5-16:19
 	android:extractNativeLibs
-		INJECTED from D:\BrightSaver_Android_Studio\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\P2\StudioProjects\Brightsaver\app\src\main\AndroidManifest.xml
 	android:supportsRtl
-		ADDED from D:\BrightSaver_Android_Studio\app\src\main\AndroidManifest.xml:7:9-35
+		ADDED from C:\Users\P2\StudioProjects\Brightsaver\app\src\main\AndroidManifest.xml:9:9-35
 	android:label
-		ADDED from D:\BrightSaver_Android_Studio\app\src\main\AndroidManifest.xml:5:9-36
+		ADDED from C:\Users\P2\StudioProjects\Brightsaver\app\src\main\AndroidManifest.xml:7:9-36
 	android:allowBackup
-		ADDED from D:\BrightSaver_Android_Studio\app\src\main\AndroidManifest.xml:4:9-35
+		ADDED from C:\Users\P2\StudioProjects\Brightsaver\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from D:\BrightSaver_Android_Studio\app\src\main\AndroidManifest.xml:6:9-40
+		ADDED from C:\Users\P2\StudioProjects\Brightsaver\app\src\main\AndroidManifest.xml:8:9-40
 activity#com.example.brightsaver.MainActivity
-ADDED from D:\BrightSaver_Android_Studio\app\src\main\AndroidManifest.xml:8:9-13:20
+ADDED from C:\Users\P2\StudioProjects\Brightsaver\app\src\main\AndroidManifest.xml:10:9-15:20
 	android:exported
-		ADDED from D:\BrightSaver_Android_Studio\app\src\main\AndroidManifest.xml:8:48-71
+		ADDED from C:\Users\P2\StudioProjects\Brightsaver\app\src\main\AndroidManifest.xml:10:48-71
 	android:name
-		ADDED from D:\BrightSaver_Android_Studio\app\src\main\AndroidManifest.xml:8:19-47
+		ADDED from C:\Users\P2\StudioProjects\Brightsaver\app\src\main\AndroidManifest.xml:10:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\BrightSaver_Android_Studio\app\src\main\AndroidManifest.xml:9:13-12:29
+ADDED from C:\Users\P2\StudioProjects\Brightsaver\app\src\main\AndroidManifest.xml:11:13-14:29
 action#android.intent.action.MAIN
-ADDED from D:\BrightSaver_Android_Studio\app\src\main\AndroidManifest.xml:10:17-69
+ADDED from C:\Users\P2\StudioProjects\Brightsaver\app\src\main\AndroidManifest.xml:12:17-69
 	android:name
-		ADDED from D:\BrightSaver_Android_Studio\app\src\main\AndroidManifest.xml:10:25-66
+		ADDED from C:\Users\P2\StudioProjects\Brightsaver\app\src\main\AndroidManifest.xml:12:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\BrightSaver_Android_Studio\app\src\main\AndroidManifest.xml:11:17-77
+ADDED from C:\Users\P2\StudioProjects\Brightsaver\app\src\main\AndroidManifest.xml:13:17-77
 	android:name
-		ADDED from D:\BrightSaver_Android_Studio\app\src\main\AndroidManifest.xml:11:27-74
+		ADDED from C:\Users\P2\StudioProjects\Brightsaver\app\src\main\AndroidManifest.xml:13:27-74
 uses-sdk
-INJECTED from D:\BrightSaver_Android_Studio\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\BrightSaver_Android_Studio\app\src\main\AndroidManifest.xml
-INJECTED from D:\BrightSaver_Android_Studio\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\P2\StudioProjects\Brightsaver\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\P2\StudioProjects\Brightsaver\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\P2\StudioProjects\Brightsaver\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from D:\BrightSaver_Android_Studio\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\P2\StudioProjects\Brightsaver\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\BrightSaver_Android_Studio\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\P2\StudioProjects\Brightsaver\app\src\main\AndroidManifest.xml

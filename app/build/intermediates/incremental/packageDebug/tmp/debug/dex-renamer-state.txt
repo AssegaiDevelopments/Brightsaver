@@ -1,6 +1,6 @@
-#Sun Oct 04 15:37:08 GMT+08:00 2026
-base.0=D\:\\BrightSaver_Android_Studio\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.1=D\:\\BrightSaver_Android_Studio\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
+#Tue Oct 06 00:12:44 CST 2026
+base.0=C\:\\Users\\P2\\StudioProjects\\Brightsaver\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.1=C\:\\Users\\P2\\StudioProjects\\Brightsaver\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
 path.0=0/classes.dex
 path.1=4/classes.dex
 renamed.0=classes.dex

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Brightsaver</string>
+    <string name="subtitle">Smart Screen Dimmer Utility</string>
+    <string name="info">Choose a power-saving preset or adjust brightness manually. Lower brightness may help reduce screen power use.</string>
+    <string name="preset_title">QUICK PRESETS</string>
+    <string name="status_label">Changes apply to this app window. System-wide control may require permission.</string>
+    <string name="system_button">Allow system brightness control</string>
+    <string name="footer">BrightSaver • GreenIT Project</string>
+    <string name="add_preset_button_text">%1$s   •   %2$d</string>
+    <string name="request_system_brightness_permission_text">System brightness permission is already granted. Use Android\'s system brightness setting if needed.</string>
+    <string name="update_brightness_level_text">Screen brightness: %1$d</string>
+    <string name="status_label_success_text">System brightness applied</string>
+    <string name="status_label_fail_text">Could not update system brightness</string>
+</resources>

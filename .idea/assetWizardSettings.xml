@@ -79,8 +79,8 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="C:\Users\P2\StudioProjects\Brightsaver\app\src\main\res\drawables\icon.png" />
-                                                <entry key="scalingPercent" value="98" />
+                                                <entry key="imagePath" value="C:\Users\P2\StudioProjects\Brightsaver\app\src\main\res\drawable\icon.png" />
+                                                <entry key="scalingPercent" value="99" />
                                                 <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
@@ -157,7 +157,8 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="outputName" value="ic_icon" />
+                                      <entry key="backgroundAssetType" value="COLOR" />
+                                      <entry key="backgroundColor" value="ffffff" />
                                     </map>
                                   </option>
                                 </PersistentState>

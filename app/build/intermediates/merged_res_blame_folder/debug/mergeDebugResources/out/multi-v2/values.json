@@ -4,20 +4,35 @@
             "outputFile": "com.example.brightsaver.app-mergeDebugResources-2:/values/values.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\P2\\StudioProjects\\Brightsaver\\app\\src\\main\\res\\values\\strings.xml",
+                    "source": "C:\\Users\\P2\\StudioProjects\\Brightsaver\\app\\src\\main\\res\\values\\ic_launcher_background.xml",
                     "from": {
-                        "startLines": "-1,-1,-1,-1,-1,-1,-1,13,12,-1,-1,-1",
-                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,4,4,-1,-1,-1",
-                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,1038,957,-1,-1,-1",
-                        "endColumns": "-1,-1,-1,-1,-1,-1,-1,85,79,-1,-1,-1",
-                        "endOffsets": "-1,-1,-1,-1,-1,-1,-1,1119,1032,-1,-1,-1"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endColumns": "56",
+                        "endOffsets": "109"
                     },
                     "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13",
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "108",
+                        "endColumns": "56",
+                        "endOffsets": "160"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\P2\\StudioProjects\\Brightsaver\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,122,171,236,380,435,606,725,811,891,956,1030",
+                        "startOffsets": "165,232,281,346,490,545,716,835,921,1001,1066,1140",
                         "endColumns": "66,48,64,143,54,170,118,85,79,64,73,80",
-                        "endOffsets": "117,166,231,375,430,601,720,806,886,951,1025,1106"
+                        "endOffsets": "227,276,341,485,540,711,830,916,996,1061,1135,1216"
                     }
                 },
                 {
@@ -28,12 +43,27 @@
                         "startOffsets": "-1"
                     },
                     "to": {
-                        "startLines": "14",
+                        "startLines": "16",
                         "startColumns": "4",
-                        "startOffsets": "1111",
-                        "endLines": "21",
+                        "startOffsets": "1221",
+                        "endLines": "23",
                         "endColumns": "12",
-                        "endOffsets": "1564"
+                        "endOffsets": "1674"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\P2\\StudioProjects\\Brightsaver\\app\\src\\main\\res\\values\\ic_icon_background.xml",
+                    "from": {
+                        "startLines": "-1",
+                        "startColumns": "-1",
+                        "startOffsets": "-1"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "52",
+                        "endOffsets": "103"
                     }
                 }
             ]

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="ic_icon_background">#FFFFFF</color>
+    <color name="ic_launcher_background">#FFFFFF</color>
     <string name="add_preset_button_text">%1$s   •   %2$d</string>
     <string name="app_name">Brightsaver</string>
     <string name="footer">BrightSaver • GreenIT Project</string>

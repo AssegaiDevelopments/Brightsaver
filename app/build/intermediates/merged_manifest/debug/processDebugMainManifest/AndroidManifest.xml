@@ -14,6 +14,7 @@
         android:allowBackup="true"
         android:debuggable="true"
         android:extractNativeLibs="false"
+        android:icon="@mipmap/ic_launcher"
         android:label="BrightSaver"
         android:supportsRtl="true"
         android:testOnly="true"

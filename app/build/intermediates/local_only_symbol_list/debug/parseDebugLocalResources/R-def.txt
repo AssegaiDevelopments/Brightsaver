@@ -1,7 +1,8 @@
 R_DEF: Internal format may change without notice
 local
+color ic_icon_background
+color ic_launcher_background
 drawable ic_icon_background
-drawable ic_launcher_background
 drawable icon
 mipmap ic_icon
 mipmap ic_icon_foreground
